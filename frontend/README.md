@@ -1,6 +1,6 @@
 # Changelog Component
 
-![Changelog Component](Changelog%20Component.jpeg)
+https://roadmap.sh/projects/changelog-component
 
 ## Description
 
