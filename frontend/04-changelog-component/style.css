@@ -25,6 +25,7 @@
 }
 
 body {
+  padding: 2rem;
   font-family: "Roboto", seriff;
   display: flex;
   justify-content: center;

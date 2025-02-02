@@ -6,4 +6,13 @@ This repository contains projects built following the [roadmap.sh](https://roadm
 
 [Changelog Component](https://roadmap.sh/projects/changelog-component)
 
-Click any of the images below to view the readme and live demo of the project.
+Acces directly to each project by using the following links
+
+<p align="left">
+  <a href='/frontend/04-changelog-component/'>
+    <img width="48%" src="./frontend/assets/images/changelog.png" alt="changelog example" />
+  </a>
+  <a href='/Frontend Projects/02-basic-html-website/'>
+    <img width="48%" src="./frontend/assets/images/changelog.png" alt="changelog example"  />
+  </a>
+</p>
