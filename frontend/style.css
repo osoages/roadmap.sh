@@ -1,0 +1,128 @@
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+  --text-accent-color: #666;
+  --accent-color: #007acc;
+  --accent-hover-color: #005bb5;
+  --accent-active-color: #003f87;
+  --border-color: #e0e0e0;
+}
+
+[data-theme="dark"] {
+  --background-color: #bababa;
+  --text-color: #e0e0e0;
+  --text-accent-color: #a3a3a3;
+  --accent-color: #bb86fc;
+  --accent-hover-color: #9f63d6;
+  --accent-active-color: #7e3eb0;
+  --border-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", seriff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.changelog-container {
+  border: 2px solid var(--border-color);
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 1080px;
+}
+
+.changelog-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.changelog-header h1 {
+  font-size: 2rem;
+}
+
+.changelog-header h2 {
+  font-size: 1rem;
+  color: var(--text-accent-color);
+}
+
+.timeline {
+  position: relative;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: var(--text-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline-item {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 20px;
+  position: relative;
+  width: calc(50% + 1px);
+  padding-right: 20px;
+  text-align: right;
+  -webkit-box-shadow: 0px 20px 15px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 20px 15px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 20px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item .timeline-date {
+  font-size: 0.9rem;
+  color: var(--text-accent-color);
+}
+
+.timeline-item .timeline-content {
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.timeline-item:nth-child(even) {
+  left: calc(50%);
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-left: 0;
+}
+
+.timeline-item:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: -4px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  top: 10px;
+}
+
+.timeline-item:nth-child(even):before {
+  left: -4px;
+  right: auto;
+}
